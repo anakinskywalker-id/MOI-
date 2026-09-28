@@ -22,22 +22,22 @@
  var SCENE_MANIFEST = [
   {
     name: "Image A",
-    src: "images/imageA.jpg",  // TODO: salin file aslinya ke images/ dan sesuaikan nama file
+    src: "images/imageA.png",  // TODO: salin file aslinya ke images/ dan sesuaikan nama file
     hotspots: []
   },
   {
     name: "Image D",
-    src: "images/imageD.jpg",  // TODO: salin file aslinya ke images/ dan sesuaikan nama file
+    src: "images/imageD.png",  // TODO: salin file aslinya ke images/ dan sesuaikan nama file
     hotspots: []
   },
   {
     name: "Image B",
-    src: "images/imageB.jpg",  // TODO: salin file aslinya ke images/ dan sesuaikan nama file
+    src: "images/imageB.png",  // TODO: salin file aslinya ke images/ dan sesuaikan nama file
     hotspots: []
   },
   {
     name: "Image C",
-    src: "images/imageC.jpg",  // TODO: salin file aslinya ke images/ dan sesuaikan nama file
+    src: "images/imageC.png",  // TODO: salin file aslinya ke images/ dan sesuaikan nama file
     hotspots: []
   },
 ];
