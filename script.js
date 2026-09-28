@@ -10,7 +10,7 @@
   // hotspot, ganti material lewat zona yang sudah Anda siapkan), tanpa
   // bisa menambah atau mengubah apa pun.
   // =====================================================================
-  var MODE_EDITOR = true;
+  var MODE_EDITOR = false;
 
   // =====================================================================
   // DAFTAR SPOT TETAP — edit bagian ini untuk tur virtual Anda.
