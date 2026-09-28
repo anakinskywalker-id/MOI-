@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>360° Viewer</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="stage">
+  <div id="loadingScreen">
+    <div id="loadingBrand">AREA 55 STUDIO VR INTERACTIVE</div>
+    <div id="loadingBarTrack"><div id="loadingBarFill"></div></div>
+    <div id="loadingPercent">0%</div>
+    <div id="loadingSub">Memuat panorama…</div>
+  </div>
+  <canvas id="gl"></canvas>
+
+  <button id="uiToggleBtn" title="Sembunyikan UI">👁</button>
+
+  <div id="topbar">
+    <div id="brand">360° VIEWER</div>
+  </div>
+
+  <div id="compass">
+    <div id="studio-brand"> VR INTERACTIVE</div>
+  </div>
+
+  <div id="hint">
+    Seret untuk melihat sekeliling<br>
+    Scroll / cubit untuk zoom<br>
+    <b>+ Tambah Spot</b> untuk membuka foto atau video 360° lokal Anda
+  </div>
+
+  <div id="editBanner">MODE EDIT HOTSPOT — klik di gambar untuk menambah titik, klik titik untuk menghapus</div>
+  <div id="zoneEditBanner">MODE EDIT ZONA — klik di gambar untuk membuat zona material baru, klik zona untuk mengelola</div>
+
+  <button id="playFallbackBtn">▶ Putar Video</button>
+
+  <div id="scenePanel"></div>
+  <div id="hotspotLayer"></div>
+  <div id="materialZoneLayer"></div>
+  <div id="zonePopup">
+    <div id="zonePopupHeader"></div>
+    <div id="zonePopupSwatches"></div>
+    <div id="zonePopupDelete">🗑 Hapus Zona Ini</div>
+  </div>
+  <div id="materialPanel" style="display:none"></div>
+  <div id="sceneFade"></div>
+
+  <div id="controls">
+    <div id="left-controls">
+      <button class="btn" id="loadBtn">+ Tambah Spot</button>
+      <button class="btn" id="hotspotBtn">Edit Hotspot</button>
+      <button class="btn" id="zoneBtn">Zona Material</button>
+      <button class="btn" id="autoBtn">Auto-putar</button>
+    </div>
+    <div id="right-controls">
+      <span id="fov-readout">FOV 90°</span>
+      <button class="btn" id="exportBtn">Ekspor Konfigurasi</button>
+      <button class="btn" id="fsBtn">Layar Penuh</button>
+    </div>
+  </div>
+
+  <input type="file" id="fileInput" accept="image/*,video/*" multiple>
+  <input type="file" id="materialFileInput" accept="image/*,video/*" multiple>
+  <input type="file" id="zoneFileInput" accept="image/*,video/*">
+
+  <div id="exportModal">
+    <div id="exportBox">
+      <h3>Konfigurasi SCENE_MANIFEST</h3>
+      <p>Salin teks di bawah ini dan tempel menggantikan <code>SCENE_MANIFEST</code> di bagian atas index.html, supaya semua spot dan hotspot yang Anda buat permanen saat dihosting. Untuk spot yang dimuat lewat "+ Tambah Spot" (bukan dari manifest), ganti path <code>images/...</code> sesuai nama file asli setelah Anda salin foto itu ke folder images/.</p>
+      <textarea id="exportText" readonly spellcheck="false"></textarea>
+      <div id="exportActions">
+        <button class="btn" id="exportCopyBtn">Salin</button>
+        <button class="btn" id="exportCloseBtn">Tutup</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
