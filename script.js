@@ -10,7 +10,7 @@
   // hotspot, ganti material lewat zona yang sudah Anda siapkan), tanpa
   // bisa menambah atau mengubah apa pun.
   // =====================================================================
-  var MODE_EDITOR = true;
+  var MODE_EDITOR = false;
 
   // =====================================================================
   // DAFTAR SPOT TETAP — edit bagian ini untuk tur virtual Anda.
@@ -21,23 +21,53 @@
   // =====================================================================
  var SCENE_MANIFEST = [
   {
-    name: "Image A",
-    src: "images/imageA.jpg",  // TODO: salin file aslinya ke images/ dan sesuaikan nama file
+    name: "1",
+    src: "images/1.png",  // TODO: salin file aslinya ke images/ dan sesuaikan nama file
     hotspots: []
   },
   {
-    name: "Image D",
-    src: "images/imageD.jpg",  // TODO: salin file aslinya ke images/ dan sesuaikan nama file
+    name: "2",
+    src: "images/2.png",  // TODO: salin file aslinya ke images/ dan sesuaikan nama file
     hotspots: []
   },
   {
-    name: "Image B",
-    src: "images/imageB.jpg",  // TODO: salin file aslinya ke images/ dan sesuaikan nama file
+    name: "3",
+    src: "images/3.png",  // TODO: salin file aslinya ke images/ dan sesuaikan nama file
     hotspots: []
   },
   {
-    name: "Image C",
-    src: "images/imageC.jpg",  // TODO: salin file aslinya ke images/ dan sesuaikan nama file
+    name: "4",
+    src: "images/4.png",  // TODO: salin file aslinya ke images/ dan sesuaikan nama file
+    hotspots: []
+  },
+  {
+    name: "E1",
+    src: "images/E1.jpg",  // TODO: salin file aslinya ke images/ dan sesuaikan nama file
+    hotspots: []
+  },
+  {
+    name: "LV1",
+    src: "images/LV1.png",  // TODO: salin file aslinya ke images/ dan sesuaikan nama file
+    hotspots: []
+  },
+  {
+    name: "LV6",
+    src: "images/LV6.png",  // TODO: salin file aslinya ke images/ dan sesuaikan nama file
+    hotspots: []
+  },
+  {
+    name: "LV2",
+    src: "images/LV2.png",  // TODO: salin file aslinya ke images/ dan sesuaikan nama file
+    hotspots: []
+  },
+  {
+    name: "LV4",
+    src: "images/LV4.png",  // TODO: salin file aslinya ke images/ dan sesuaikan nama file
+    hotspots: []
+  },
+  {
+    name: "LV3",
+    src: "images/LV3.png",  // TODO: salin file aslinya ke images/ dan sesuaikan nama file
     hotspots: []
   },
 ];
