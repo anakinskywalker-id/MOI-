@@ -42,7 +42,7 @@
   },
   {
     name: "E1",
-    src: "images/E1.jpg",  // TODO: salin file aslinya ke images/ dan sesuaikan nama file
+    src: "images/E1.png",  // TODO: salin file aslinya ke images/ dan sesuaikan nama file
     hotspots: []
   },
   {
